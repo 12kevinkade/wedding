@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SwearToGod  Photography | Capturing Life's Moments</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="logo">SwearToGod</div>
+        <ul class="nav-links">
+            <li><a href="#home" class="active">Home</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="hamburger">
+            <i class="fas fa-bars"></i>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Capturing Moments,<br>Creating Memories</h1>
+            <p>Professional photography for weddings, events, and portraits.</p>
+            <a href="#portfolio" class="btn">View Portfolio</a>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio">
+        <div class="section-header">
+            <h2>Our Portfolio</h2>
+            <p>A glimpse into the stories we've told.</p>
+        </div>
+        <div class="gallery">
+            <div class="gallery-item">
+                <img src="images/portfolio-1.jpg" alt="Wedding Setup" onclick="openLightbox(this)">
+            </div>
+            <div class="gallery-item">
+                <img src="images/portfolio-2.jpg" alt="Event Decor" onclick="openLightbox(this)">
+            </div>
+            <div class="gallery-item">
+                <img src="images/portfolio-3.jpg" alt="Celebration" onclick="openLightbox(this)">
+            </div>
+            <div class="gallery-item">
+                <img src="images/portfolio-4.jpg" alt="Table Setting" onclick="openLightbox(this)">
+            </div>
+            <div class="gallery-item">
+                <img src="images/portfolio-5.jpg" alt="Floral Arrangement" onclick="openLightbox(this)">
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="section-header">
+            <h2>Services</h2>
+            <p>Tailored photography packages for your special occasions.</p>
+        </div>
+        <div class="service-cards">
+            <div class="card">
+                <i class="fas fa-rings"></i>
+                <h3>Weddings</h3>
+                <p>Documenting your love story with elegance and style.</p>
+            </div>
+            <div class="card">
+                <i class="fas fa-glass-cheers"></i>
+                <h3>Events</h3>
+                <p>Capturing the energy and details of your corporate or private events.</p>
+            </div>
+            <div class="card">
+                <i class="fas fa-camera-retro"></i>
+                <h3>Portraits</h3>
+                <p>Professional headshots and family portraits that shine.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="contact-container">
+            <div class="contact-info">
+                <h2>Get in Touch</h2>
+                <p>Let's discuss your next project.</p>
+                <div class="info-item">
+                    <i class="fas fa-envelope"></i>
+                    <span>kivumbikevin@gmail.com</span>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-phone"></i>
+                    <span>+256 (756-246-648)</span>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>kampala road opposite uganda house</span>
+                </div>
+            </div>
+            <form class="contact-form" onsubmit="handleContact(event)">
+                <div class="form-group">
+                    <input type="text" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" placeholder="Your Email" required>
+                </div>
+                <div class="form-group">
+                    <textarea placeholder="Message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-dark">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 SwearToGod Photography. All rights reserved.</p>
+    </footer>
+
+    <!-- Lightbox -->
+    <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+        <span class="close-btn">&times;</span>
+        <img id="lightbox-img" src="" alt="Full Screen">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
